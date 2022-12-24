@@ -1,4 +1,4 @@
-Напиши скрипт, який під час втрати фокусу на інпуті (подія blur), перевіряє його вміст щодо правильної кількості введених символів.
+/* Напиши скрипт, який під час втрати фокусу на інпуті (подія blur), перевіряє його вміст щодо правильної кількості введених символів.
 
 <input
   type="text"
@@ -21,4 +21,15 @@
 
 #validation-input.invalid {
   border-color: #f44336;
+} */
+
+const textInput = document.querySelector("#validation-input");
+ textInput.addEventListener("blur", checkUserInput);
+function checkUserInput(event) {
+  if (textInput.value.length === Number(textInput.getAttribute("data-length"))) {
+    textInput.classList.add("valid");
+  } else {
+    textInput.classList.replace("valid", "invalid");
+  }
 }
+    
