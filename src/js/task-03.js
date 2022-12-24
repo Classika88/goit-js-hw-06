@@ -12,12 +12,10 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-/* const gallery = document.querySelector(".gallery");
+const gallery = document.querySelector(".gallery");
 const galElm = images.map((image) => `<li>
 <img src="${image.url}" alt="${image.alt}"></li>`).join("");
-/* galElm.style.display = "flex"; */
-/* galElm.style.maxWidth = "1200px";
-galElm.style.gap = "30px";
-gallery.insertAdjacentHTML("afterbegin", galElm); */
+gallery.insertAdjacentHTML("afterbegin", galElm); 
 
-console.dir(CSSStyleDeclaration)
+
+
