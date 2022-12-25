@@ -16,6 +16,15 @@ function getRandomHexColor() {
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
+const btn = document.querySelector(".change-color");
+const span = document.querySelector(".color");
+const divEl = document.querySelector(".widget");
+
+btn.addEventListener("click", (event) => {
+  const changeColor = getRandomHexColor();
+  span.textContent = changeColor;
+  divEl.style.backgroundColor = changeColor;
+});
 
 
 
@@ -23,17 +32,3 @@ function getRandomHexColor() {
 
 
 
-
-/* function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
-
-const colorName = document.querySelector(".color");
-const button = document.querySelector(".change-color");
-const widgetColor = document.querySelector(".widget");
-
-button.addEventListener("click", (event) => {
-  const randomColor = getRandomHexColor();
-  colorName.textContent = randomColor;
-  widgetColor.style.backgroundColor = randomColor;
-}); */
