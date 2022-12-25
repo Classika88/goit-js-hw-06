@@ -15,7 +15,11 @@ const images = [
 const gallery = document.querySelector(".gallery");
 const galElm = images.map((image) => `<li>
 <img src="${image.url}" alt="${image.alt}"></li>`).join("");
-gallery.insertAdjacentHTML("afterbegin", galElm); 
+gallery.insertAdjacentHTML("afterbegin", galElm);
 
+/* const stylesEl = document.querySelectorAll("li");
+stylesEl.style.alignItems = "center";
+stylesEl.style.display = "flex"
+stylesEl.style.gap = "30px" */
 
 

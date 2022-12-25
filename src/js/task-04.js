@@ -12,7 +12,6 @@
 
 let counterValue = 0;
 const button1 = document.querySelector('button[data-action="decrement"]');
-console.log(button1)
 
 const handleClick1 = () => {
   counterValue -= 1;
